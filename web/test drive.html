@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Test Drive</title>
+    <link rel="stylesheet" href="css/styles.css">  <!-- Assuming your CSS is in 'styles.css' -->
+</head>
+<body>
+      <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="test drive.html">Test Drive</a></li>
+                    <li><a href="accessory.html">Accessory</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+    <main>
+        <section class="test-drive-container">
+            <h1 align="center">Test Drive</h1>
+            <p align="center">Schedule a test drive today and experience the thrill of driving a new car.</p>
+            <form action="testdrive" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="car-model">Car Model:</label>
+                <select id="car-model" name="car-model" required>
+                    <option value="Porsche-911">Porsche-911</option>
+                    <option value="Porsche-718 Boxster">Porsche-718 Boxster</option>
+                    <option value="Porsche-718 Cayman GTS">Porsche-718 Cayman GTS</option>
+                    <option value="Ferrari-488 GTB">Ferrari-488 GTB</option>
+                    <option value="Ferrari-F8 Tributo">Ferrari-T8 Tributo</option>
+                    <option value="Ferrari-Portofino">Ferrari-Portofino</option>
+                    <option value="Lamborghini-Huracan">Lamborghini-Huracan</option>
+                    <option value="Lamborghini-Aventador">Lamborghini-Aventador</option>
+                    <option value="Lamborghini-Gallardo">Lamborghini-Gallardo</option>
+                    <option value="Chevrolet-Corvette">Chevrolet-Corvette</option>
+                    <option value="Chevrolet-Camaro">Chevrolet-Camaro</option>
+                    <option value="Ford-Mustang">Ford-Mustang</option>
+                    <option value="Ford-GT40">Ford-GT40</option>
+                    <option value="Mercedes-AMG-GT 63">Mercedes-AMG-GT 63</option>
+                    <option value="Mercedes-AMG-GT 64">Mercedes-AMG-GT 64</option>
+                    <option value="Audi-R8">Audi-R8</option>
+                    <option value="Audi-TT">Audi-TT</option>
+                    <option value="Jaguar-F-Type">Jaguar-F-Type</option>
+                    <option value="Jaguar-XK-R">Jaguar-XK-R</option>
+                </select>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <br>
+                <input type="submit" value="Schedule Test Drive">
+            </form>
+        </section>
+        
+        <center><a href="home.html" class="back-button">Back</a></center>
+    </main>
+
+   <footer>
+        <h3>"A car is not just a mode of transport, it's an experience."</h3>
+        <p>&copy; 2024 Drive Dream. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

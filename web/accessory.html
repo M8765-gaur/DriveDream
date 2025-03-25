@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Accessories</title>
+    <link rel="stylesheet" href="css/styles.css">  <!-- Assuming your CSS is in 'styles.css' -->
+</head>
+<body>
+<header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="test drive.html">Test Drive</a></li>
+                    <li><a href="accessory.html">Accessory</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+    <main>
+        <section class="booked-accessories-container">
+            <h1 align="center">Car Accessories</h1>
+            <p align="center">Enhance your vehicle with our range of accessories!</p>
+            <form action="accessory" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="car-accessories">Car Accessories:</label>
+                <select id="car-accessories" name="car-accessories" required>
+                    <option value="spoiler">Spoiler</option>
+                    <option value="seat covers">Seat Covers</option>
+                    <option value="floor mats">Floor Mats</option>
+                </select>
+                
+                <br>
+                <input type="submit" value="Book">
+            </form>
+        </section>
+        
+        <center><a href="home.html" class="back-button">Back</a></center>
+    </main>
+
+   <footer>
+        <h3>"A car is not just a mode of transport, it's an experience."</h3>
+        <p>&copy; 2024 Drive Dream. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

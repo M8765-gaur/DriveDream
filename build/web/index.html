@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive Dream</title>
+    <style>
+        /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Styling */
+body {
+    background-image: url("images/BK3.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Content Centering and Animation */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Header Image Styling */
+header img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    animation: bounceIn 2s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Header Text Styling */
+h1 {
+    font-size: 2.8rem;
+    margin: 20px 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Hover Effect for Buttons */
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Active Effect for Buttons */
+button:active {
+    transform: translateY(1px); /* Press effect */
+}
+
+/* Container for Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(-1000px);
+    }
+    60% {
+        transform: translateY(30px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    header img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <img src="images/dd.png" alt="Drive Dream logo">
+            <h1>Welcome To the World of Drive Dream 😊</h1>
+        </header>
+        <h3>
+            <a href="home.html">
+                <button>Browse as Guest ...</button>
+            </a>
+        </h3>
+        <div class="button-container">
+            <a href="login.html">
+                <button>Login</button>
+            </a>
+            <a href="cars.html">
+                <button>Sign Up</button>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

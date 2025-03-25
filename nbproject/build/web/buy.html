@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Buy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-image: url("images/BK6.webp");
+                background-size: cover;
+                background-position: center;
+            }
+            header{
+                background-color:#333;
+                color:#fff;
+                padding:1rem;
+                text-align:center;
+            }
+            header nav ul{
+                list-style: none;
+                margin:0;
+                padding:0;
+                display: flex;
+                justify-content: space-between;
+            }
+            header nav ul li{
+                margin-right: 20px;
+            }
+            header nav a{
+                color:#fff;
+                text-decoration: none;
+            }
+            .buy-container{
+                max-width: 800px;
+                margin: 40px auto;
+                padding:20px;
+                background-color: #f0f0f0;
+                border:1px solid #ddd;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            label{
+                margin-bottom: 10px;
+            }
+            select{
+                width: 100%;
+                padding:10px;
+                margin-bottom: 20px;
+                border: 1px solid #ddd;
+            }
+            input[type="submit"]{
+                width: 100%;
+                padding:10px;
+                background-color: #333;
+                color:#fff;
+                border:none;
+                border-radius: 5px;
+                cursor:pointer;
+            }
+            input[type="submit"]:hover{
+                background-color:#444;
+            }
+            .car-listing{
+                margin-top:20px;
+            }
+            .car-listing ul{
+                list-style: none;
+                padding: 0;
+                margin:0;
+            }
+            .car-listing li{
+                margin-bottom: 20px;
+                padding: 20px;
+                border:1px solid #ddd;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            .car-listing h3{
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            .car-listing{
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            .button{
+                background-color: #333;
+                color:#fff;
+                border:none;
+                border-radius: 5px;
+                cursor: pointer;
+                padding: 10px 20px;
+            }
+            .button:hover{
+                background-color:#444;
+            }
+            footer{
+                background-color:#333;
+                color:#fff;
+                padding:1rem;
+                text-align:center;
+                clear:both;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="cars.html">CARS</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="buy-container">
+            <h1 align="center">Buy Your Dream Car</h1>
+            <p align="center">Search for your ideal car and start the buying process today!</p>
+            <form action="buy" method="post">
+                <label for="make">Make</label>
+                <select id="make" name="make">
+                    <option value="Porsche">Porsche</option>
+                    <option value="Ferrari">Ferrari</option>
+                    <option value="Lamborghini">Lamborghini</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Jaguar">Jaguar</option>
+                </select>
+                <label for="model">Model</label>
+                <select id="model" name="model">
+                <option value="Porsche-911">Porsche-911</option>
+                <option value="Porsche-718 Boxster">Porsche-718 Boxster</option>
+                <option value="Porsche-718 Cayman GTS">Porsche-718 Cayman GTS</option>
+                <option value="Ferrari-488 GTB">Ferrari-488 GTB</option>
+                <option value="Ferrari-F8 Tributo">Ferrari-F8 Tributo</option>
+                <option value="Ferrari-Portofino">Ferrari-Portofino</option>
+                <option value="Lamborghini-Huracan">Lamborghini-Huracan</option>
+                <option value="Lamborghini-Aventador">Lamborghini-Aventador</option>
+                <option value="Lamborghini-Gallardo">Lamborghini-Gallardo</option>
+                <option value="Chevrolet-Corvette">Chevrolet-Corvette</option>
+                <option value="Chevrolet-Camaro">Chevrolet-Camaro</option>
+                <option value="Ford-Mustang">Ford-Mustang</option>
+                <option value="Ford-GT40">Ford-GT40</option>
+                <option value="Mercedes-AMG-GT 63">Mercedes-AMG-GT 63</option>
+                <option value="Mercedes-AMG-GT 64">Mercedes-AMG-GT 64</option>
+                <option value="Audi-R8">Audi-R8</option>
+                <option value="Audi-TT">Audi-TT</option>
+                <option value="Jaguar-F-Type">Jaguar-F-Type</option>
+                <option value="Jaguar-XK-R">Jaguar-XK-R</option>
+                </select>
+                <label for="year">Year</label>
+                <select id="year" name="year">
+                <option value="Porsche-911-2018">Porsche-911-2018</option>
+                <option value="Porsche-718 Boxster-2016">Porsche-718 Boxster-2016</option>
+                <option value="Porsche-718 Cayman GTS-2012">Porsche-718 Cayman GTS-2012</option>
+                <option value="Ferrari-488 GTB-2016">Ferrari-488 GTB-2016</option>
+                <option value="Ferrari-F8 Tributo-2020">Ferrari-F8 Tributo-2020</option>
+                <option value="Ferrari-Portofino-2018">Ferrari-Portofino-2018</option>
+                <option value="Lamborghini-Huracan-2014">Lamborghini-Huracan-2014</option>
+                <option value="Lamborghini-Aventador-2019">Lamborghini-Aventador-2019</option>
+                <option value="Lamborghini-Gallardo-2013">Lamborghini-Gallardo-2013</option>
+                <option value="Chevrolet-Corvette-2024">Chevrolet-Corvette-2024</option>
+                <option value="Chevrolet-Camaro-2024">Chevrolet-Camaro-2024</option>
+                <option value="Ford-Mustang-2024">Ford-Mustang-2024</option>
+                <option value="Ford-GT40-1969">Ford-GT40-1969</option>
+                <option value="Mercedes-AMG-GT 63-2023">Mercedes-AMG-GT 63-2023</option>
+                <option value="Mercedes-AMG-GT 64-2024">Mercedes-AMG-GT 64-2024</option>
+                <option value="Audi-R8-2006">Audi-R8-2006</option>
+                <option value="Audi-TT-2014">Audi-TT-2014</option>
+                <option value="Jaguar-F-Type-2012">Jaguar-F-Type-2012</option>
+                <option value="Jaguar-XK-R-2014">Jaguar-XK-R-2014</option>
+                </select>
+                <label for="price">Price</label>
+                <select id="price" name="price">
+                <option value="Porsche-911-$122,095">Porsche-911-$122,095</option>
+                <option value="Porsche-718 Boxster-$78,000">Porsche-718 Boxster-$78,000</option>
+                <option value="Porsche-718 Cayman GTS-$160,700">Porsche-718 Cayman GTS-$160,700</option>
+                <option value="Ferrari-488 GTB-$290,000">Ferrari-488 GTB-$290,000</option>
+                <option value="Ferrari-F8 Tributo-$284,000">Ferrari-F8 Tributo-$284,000</option>
+                <option value="Ferrari-Portofino-$230,950">Ferrari-Portofino-$230,950</option>
+                <option value="Lamborghini-Huracan-$249,865">Lamborghini-Huracan-$249,865</option>
+                <option value="lamborghini-Aventador-$550,000">Lamborghini-Aventador-$550,000</option>
+                <option value="Lamborghini-Gallardo-$191,885">Lamborghini-Gallardo-$191,885</option>
+                <option value="Chevrolet-Corvette-$115,595">Chevrolet-Corvette-$115,595</option>
+                <option value="Chevrolet-Camaro-$73,695">Chevrolet-Camaro-$73,695</option>
+                <option value="Ford-Mustang-$63,230">Ford-Mustang-$63,230</option>
+                <option value="Ford-GT40-$1,700,000">Ford-GT40-$1,700,000</option>
+                <option value="Mercedes-AMG-GT 63-$170,350">Mercedes-AMG-GT 63-$170,350</option>
+                <option value="Mercedes-AMG-GT 64-$105,900">Mercedes-AMG-GT 64-$105,900</option>
+                <option value="Audi-R8-$253,290">Audi-R8-$253,290</option>
+                <option value="Audi-TT-$51,300">Audi-TT-$51,300</option>
+                <option value="Jaguar-F-Type-$79,900">Jaguar-F-Type-$79,900</option>
+                <option value="Jaguar-XK-R-$128,480">Jaguar-XK-R-$128,480</option>
+            </select>
+                <label for="name">Name:</label>
+                    <input type="name" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"><br>
+                    <button class="Book-Now">Book-Now</button><br>
+                <center><a href="sign up.html">BACK</a></center>
+            </form>
+        </div>
+        <footer>
+            <p>&copy;2024 Car Website</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url("images/BK8.webp");
+    background-size: cover;
+    background-position: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sign up.html">Cars</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="section-title-container">
+            <h1 class="section-title">Our Services</h1>
+        </div>
+
+        <div class="services-container">
+            <div class="service">
+                <h2>Car Wash</h2>
+                <p>Get your car washed and cleaned by our expert technicians.</p>
+            </div>
+
+            <div class="service">
+                <h2>Car Repair</h2>
+                <p>Get your car repaired and serviced by our experienced mechanics.</p>
+            </div>
+
+            <div class="service">
+                <h2>Car Maintenance</h2>
+                <p>Get your car maintained and serviced regularly to keep it in good condition.</p>
+            </div>
+        </div>
+
+        <div class="customer-details">
+            <h1 class="section-title">Customer Details</h1>
+            <form action="services" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service:</label>
+                    <select id="service" name="service" class="form-input">
+                        <option value="car wash">Car Wash</option>
+                        <option value="car repair">Car Repair</option>
+                        <option value="car maintenance">Car Maintenance</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="form-button" style="align-self: center">Book Schedule</button>
+            </form>
+
+          
+        <center><a href="home.html" class="back-button">Back</a></center>
+        
+        </div>
+    </main>
+
+ <footer>
+        <h3>"A car is not just a mode of transport, it's an experience."</h3>
+        <p>&copy; 2024 Drive Dream. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

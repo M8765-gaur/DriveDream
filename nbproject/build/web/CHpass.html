@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-image: url("images/BK11.avif");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            div{
+                border:10px solid black;
+                border-radius:30px;
+                width:400px;
+                height:300px;
+                margin-left:500px;
+            }
+            table{
+                margin-top:10px;
+            }
+            #d1{
+                color:black;
+                font-size:24px;
+            }
+            #d2{
+                border-radius:25px;
+                color:blue;
+                font-size:20px;
+            }
+            #b1{
+                margin-top:50px;
+                border-radius:25px;
+                color:blue;
+                font-size:20px;
+            }
+            h1{
+                color-black;
+                font-size:36px;
+            }
+            p{
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1 align="center">Change Password</h1>
+            <form action="Chpass" method="post">
+                <table align="center">
+                    <tr>
+                        <td>EMAIL</td>
+                        <td><input type="email" name="em"></td>
+                    </tr>
+                    <tr>
+                        <td>CURRENT PASSWORD</td>
+                        <td><input type="current password" name="cpass"></td>
+                    </tr>
+                    <tr>
+                        <td>NEW PASSWORD</td>
+                        <td><input type="password" name="npass"></td>
+                    </tr>
+                    <tr>
+                        <td>CONFIRM PASSWORD</td>
+                        <td><input type="confirm password" name="conpass">
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><br>
+                            <input type="submit" value="Change Password"><br><br></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

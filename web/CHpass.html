@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Change Password - Drive Dream</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Link to the external CSS file -->
+        <link rel="stylesheet" href="css/chpass.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/dd.png" alt="Website Logo" class="logo">
+            <h1>Change Password</h1>
+        </header>
+
+        <div class="change-password-container">
+            <form action="Chpass" method="post" class="change-password-form">
+                <table>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" name="em" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="current-password">Current Password</label></td>
+                        <td><input type="password" name="cpass" id="current-password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="new-password">New Password</label></td>
+                        <td><input type="password" name="npass" id="new-password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirm-password">Confirm Password</label></td>
+                        <td><input type="password" name="conpass" id="confirm-password" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="submit-btn">
+                            <input type="submit" value="Change Password">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
+        <h4 class="login-link">
+                <a href="login.html">Back to Login</a>
+            </h4>
+        </div>
+        
+        
+            <footer>
+        <h3>"A car is not just a mode of transport, it's an experience."</h3>
+        <p>&copy; 2024 Drive Dream. All Rights Reserved.</p>
+    </footer>
+        
+        
+    </body>
+</html>

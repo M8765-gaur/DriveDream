@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-image: url("images/home2.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+            .search-input{
+                width:50%;
+                height:30px;
+                padding:10px;
+                border:1px solid#ccc;
+                border-radius:5px;
+            }
+            .search-button{
+                width:100px;
+                height:30px;
+                background-color:#4CAF50;
+                color:#fff;
+                border:none;
+                border-radius:5px;
+                cursor:pointer;
+            }
+            .search-button:hover{
+                background-color:#3e8e41;
+            }
+            body{
+                font-family:Arial,sans-serif;
+                margin:0;
+                padding:0;
+            }
+            header{
+                background-color:#333;
+                color:#fff;
+                padding:20px;
+                text-align:center;
+            }
+            header nav ul{
+                list-style: none;
+                margin:0;
+                padding:0;
+                display:flex;
+                justify-content: space-between;
+            }
+            header nav li{
+                margin-right: 20px;
+            }
+            header nav a{
+                color: #fff;
+                text-decoration:none;
+            }
+            main{
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                padding:20px;
+            }
+            .featured-cars{
+                background-color:#f7f7f7;
+                padding:20px;
+            }
+            .car-grid{
+                display:grid;
+                grid-template-columns:repeat(3,1fr);
+                gap:20px;
+            }
+            .cars{
+                background-color:#fff;
+                padding:20px;
+                border:1px solid#ddd;
+                box-shadow:0 0 10px rgba(0,0,0,0.1);
+            }
+            .latest-releases{
+                background-color:#f7f7f7;
+                padding:20px;
+            }
+            .latest-release ul{
+                list-style:none;
+                margin:0;
+                padding:0;
+            }
+            .latest-release li{
+                margin-bottom:20px;
+            }
+            footer{
+                background-color:#333;
+                color:#fff;
+                padding:10px;
+                text-align:center;
+                clear:both;
+            }    
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="cars.html">CARS</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>WELCOME TO DRIVE DREAM</h1>
+            <p>Discover Your Dream Car</p>
+            <section id="cars">
+                <h2>Luxary Car</h2>
+                <div class="cars">
+                    <img src="images/home.jpg" alt="car1">
+                    <h3>Sports Cars</h3>
+                    <p>This Car For Car Lover</p>
+                </div>
+            </section>
+            <footer>
+                <h3>"A car is like a blank canvas,and the journey is your brushstroke."</h3>
+            </footer>
+        </main>
+    </body>
+</html>

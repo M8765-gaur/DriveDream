@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    background-image: url("images/BK11.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 50px 20px;  /* Increased padding for more space */
+    background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent dark background */
+    border-bottom: 4px solid #4CAF50;  /* Added green border under header */
+    color: white;
+}
+
+header .logo {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px; /* Space between logo and heading */
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Change Password Form Container */
+.change-password-container {
+    background-color: rgba(255, 255, 255, 0.8);  /* Semi-transparent white background */
+    border-radius: 20px;
+    width: 400px;
+    padding: 40px;
+    margin: 40px auto;  /* Adjusted margin to bring container closer to header */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.change-password-container form {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+table td {
+    padding: 10px 0;
+}
+
+table td label {
+    font-size: 18px;
+    color: #333;
+}
+
+table td input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+table td input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-btn input {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn input:hover {
+    background-color: #45a049;
+}
+
+/* Login Link */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 40px;
+    border-top: 4px solid #4CAF50;
+}
+
+footer h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 1em;
+}
